@@ -1,7 +1,5 @@
 import React from 'react';
-import { BrowserRouter as  Router, Route, Routes } from 'react-router-dom';
-
-import {AuthRegistration} from "../auth/auth.registration";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import css from './app.module.css';
 
@@ -10,9 +8,9 @@ export const App = (): JSX.Element => {
     <div className={css.root}>
       <Router>
         <Routes>
-          <Route path={'/auth/register'} element={<AuthRegistration />} />
+          <Route path="/" element={<>Hello World</>} />
         </Routes>
       </Router>
     </div>
   );
-}
+};
